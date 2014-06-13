@@ -1,7 +1,5 @@
 var tape = require('tape');
 
-if (!Function.prototype.bind) Function.prototype.bind = require('function-bind');
-
 var call = function (fn) { fn(); };
 
 function suite (name, cb) {
@@ -19,8 +17,13 @@ function suite (name, cb) {
     };
 
     var _suite = {
-        beforeEach: beforeEach.push.bind(beforeEach),
-        afterEach: afterEach.push.bind(afterEach),
+        beforeEach: function (cb) {
+            beforeEach.push(cb);
+        },
+
+        afterEach: function (cb) {
+            afterEach.push(cb);
+        },
 
         test: function (name, cb) {
             tape(name, runTest(cb));
