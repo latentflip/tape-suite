@@ -9,6 +9,7 @@
   "author": "Philip Roberts",
   "license": "MIT",
   "dependencies": {
+    "function-bind": "^0.1.0",
     "tape": "^2.13.3"
   }
 }

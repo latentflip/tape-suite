@@ -1,5 +1,7 @@
 var tape = require('tape');
 
+if (!Function.prototype.bind) Function.prototype.bind = require('function-bind');
+
 var call = function (fn) { fn(); };
 
 function suite (name, cb) {
