@@ -1,0 +1,14 @@
+{
+  "name": "tape-suite",
+  "version": "0.1.0",
+  "description": "",
+  "main": "tape-suite.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Philip Roberts",
+  "license": "MIT",
+  "dependencies": {
+    "tape": "^2.13.3"
+  }
+}
