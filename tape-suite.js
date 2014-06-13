@@ -32,4 +32,7 @@ function suite (name, cb) {
     cb(_suite);
 }
 
+//Export original tape
+suite.tape = tape;
+
 module.exports = suite;
