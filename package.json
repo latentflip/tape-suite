@@ -1,15 +1,19 @@
 {
   "name": "tape-suite",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "tape-suite.js",
   "scripts": {
     "test": "node test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/latentflip/tape-suite"
+  },
   "author": "Philip Roberts",
   "license": "MIT",
   "dependencies": {
-    "function-bind": "^0.1.0",
-    "tape": "^2.13.3"
+    "function-bind": "^1.0.2",
+    "tape": "^4.0.0"
   }
 }
